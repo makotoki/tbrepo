@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+<h1>動くか</h1>
+<title></title>
+</head>
+<body>
+</br>
+  <form method ="POST" action="mission_5-1.php">
+<p>【投稿フォーム】</p>
+<p><input type="text" name="name" placeholder="名前" value= "<?php if(!empty($hmname)){ echo $hmname ;} else {} ?>"></p>
+
+<p><input type="text" name="comment" placeholder="コメント" value= "<?php if(!empty($hmcomment)){ echo $hmcomment ;} else {} ?>" ></p>
+<p>
+<input type="password" name="pass" placeholder="パスワード(任意)">
+<input type="submit" value="送信"></p>
+
+<p><input type="hidden" name="khb" value= "<?php if(!empty($hmnum)){ echo $hmnum ;} else {} ?>" ></p>
+
+</form>
+</br>
+<form method="POST"action="mission_5-1.php">
+<p>【削除フォーム】</p>
+<p><input type="text" name="dn" placeholder="削除対象番号"></p>
+<p><input type="text" name="dpass" placeholder="パスワード">
+<input type="submit"  value="削除"></p>
+</form>
+</br>
+<form method="POST" action="mission_5-1.php">
+<p>【編集フォーム】</p>
+<p><input type="text" name="hn" placeholder="編集対象番号"></p>
+<p><input type="text" name="hpass" placeholder="パスワード">
+<input type="submit" value="編集"></p>
+</form>
+</body>
+</html>
